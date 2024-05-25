@@ -114,7 +114,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/pezzolabs/pezzo/${{ matrix.project }}
+            ghcr.io/dmthomson/pezzo/${{ matrix.project }}
           tags: |
             type=raw,value=${{ github.run_id }},prefix=gh-
             type=ref,event=branch,prefix=branch-
